@@ -1,13 +1,10 @@
 {
-  "name": "brickvault-marketplace",
+  "name": "project",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
